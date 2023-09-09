@@ -1,0 +1,48 @@
+.card{
+    background-color: rgba(130,129,119,1);
+}
+.facility-section {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .facility-container {
+    display: flex;
+    animation: moveCards 20s linear infinite; /* Adjust animation duration as needed */
+  }
+  
+  .facility-card {
+    width: 300px;
+    padding: 20px;
+    margin: 0 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .facility-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @keyframes moveCards {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  /* Add this to your CSS */
+@keyframes fadeInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
